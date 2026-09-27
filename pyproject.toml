@@ -1,0 +1,25 @@
+[project]
+name = "xiaolb"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "dodotry", email = "dodotry@aliyun.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pyside6>=6.11.2",
+    "pyside6-fluent-widgets>=1.11.3",
+    "loguru>=0.7.2",
+]
+
+[project.scripts]
+xiaolb = "xiaolb:main"
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+default = true
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
